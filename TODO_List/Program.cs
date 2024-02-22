@@ -101,8 +101,8 @@ class Program
                             else
                             {
                                 Console.ForegroundColor = ConsoleColor.Green;
+                                todoList.RemoveAt(taskId - 1);
                                 Console.WriteLine($"\nЗадача {taskId} удалена.");
-                                todoList.RemoveAt(taskId-1);
                                 Console.ResetColor();
                                 break;
                             }
